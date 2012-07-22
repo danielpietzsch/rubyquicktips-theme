@@ -481,7 +481,7 @@ div.sub {
 	padding-bottom: 2px;
 	font-family: {font:Body};
 	line-height: normal;
-	width: 387px;
+	width: 487px;
 	vertical-align: middle;
 	margin: 0;
 }
@@ -795,9 +795,9 @@ ol.CodeRay li { white-space: pre }
                 <a href="/random">Get a random tip</a>
                 
 		<a href="{RSS}" title="Subscribe to my RSS Feed">RSS</a>
+		{block:IfShowTwitter}{block:Twitter}<a href="http://twitter.com/{TwitterUsername}" title="Follow on Twitter">Twitter</a>{/block:Twitter}{/block:IfShowTwitter}
 		<a href="/archive" title="Go to post archive">Archive</a>
 		</div>
-		{block:IfShowTwitter}<div class="sub">{block:Twitter}<a href="http://twitter.com/{TwitterUsername}">Follow Me on Twitter</a>{/block:Twitter}</div>{/block:IfShowTwitter}
 	</div>
 	{block:IfShowSearchBar}{block:SearchForm}<div id="search">
 	<form action="/search" method="get">
